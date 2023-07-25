@@ -1,5 +1,4 @@
 import React from "react";
-import SegmentIcon from "@mui/icons-material/Segment";
 import { Box, Flex, Text, useDisclosure } from "@chakra-ui/react";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import MobileSidebar from "./MobileSidebar";

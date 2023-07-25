@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Grid, Text } from "@chakra-ui/react";
 import React from "react";
 import DashboardOutlinedIcon from "@mui/icons-material/DashboardOutlined";
 import NoteAltOutlinedIcon from "@mui/icons-material/NoteAltOutlined";
@@ -14,28 +14,36 @@ const Sidebar = () => {
       bgColor="white"
       w={{ base: "15%", md: "15%", lg: "10%" }}
       h="100vh"
-      display={{base:"none",md:"block", lg:"block"}}
+      display={{ base: "none", md: "block", lg: "block" }}
+      m={"auto"}
     >
-      <Grid gap="10px" p="10px 20px " fontSize={"13px"} fontWeight={"500"}>
-        <Box p="10px">
-          <DashboardOutlinedIcon fontSize="small" />
-          <Text>Dashboard</Text>
+      <Grid gap="10px" p="10px 20px " fontSize={"13px"} fontWeight={"500"} m={"auto"}>
+        <Box p="10px" m={"auto"}>
+          <Center>
+            <DashboardOutlinedIcon fontSize="small" m={"auto"} />
+          </Center>
+          <Text textAlign={"center"}>Dashboard</Text>
         </Box>
         <Box
-          p="10px 0px"
+          p="20px 10px"
           borderRadius={"10px"}
           bgColor="#E5F1FC"
           border="2px solid #4096EC"
           color={"#4096EC"}
+          m={"auto"}
         >
-          <NoteAltOutlinedIcon fontSize="small" />
+          <Center>
+            <NoteAltOutlinedIcon fontSize="small" />
+          </Center>
           <Text>Assessment</Text>
         </Box>
-        <Box p="10px">
-          <LibraryBooksOutlinedIcon fontSize="small" />
+        <Box p="10px" m={"auto"}>
+          <Center>
+            <LibraryBooksOutlinedIcon fontSize="small" />
+          </Center>
           <Text>My Library</Text>
         </Box>
-        <Box p="15px" borderTop={"1px dotted #E3E5E8"} mt="10px">
+        <Box p="15px" borderTop={"1px dotted #E3E5E8"} mt="10px" m={"auto"}>
           <Button
             fontSize={"10px"}
             w="46px"
@@ -54,9 +62,11 @@ const Sidebar = () => {
             Admin
           </Button>
         </Box>
-        <Box p="10px">
-          <AnalyticsOutlinedIcon fontSize="small" />
-          <Text>Round Status</Text>
+        <Box p="10px" m={"auto"}>
+          <Center>
+            <AnalyticsOutlinedIcon fontSize="small" />
+          </Center>
+          <Text textAlign={"center"}>Round Status</Text>
         </Box>
       </Grid>
     </Box>

@@ -1,14 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import MobileNavbar from './components/MobileNavbar';
+import Home from './Home';
 
 function App() {
   return (
    
     <>
-     {/* <Navbar/> */}
-     <MobileNavbar/>
+     <Home/>
     </>
    
   );
