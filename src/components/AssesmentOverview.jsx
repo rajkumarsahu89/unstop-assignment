@@ -10,7 +10,7 @@ const AssesmentOverview = () => {
         <Box
             bgColor="white"
             p="20px"
-            display={{ base: "none", md: "block", lg: "block" }}
+            display={{ base: "block", md: "block", lg: "block" }}
         >
             <Text fontSize={"18px"} fontWeight={"500"} textAlign={"left"}>
                 Assessment Overview
@@ -23,12 +23,12 @@ const AssesmentOverview = () => {
                 border="1px solid #E3E5E8"
                 fontWeight={"500"}
                 gridTemplateColumns={{
-                    base: "repeat(4,auto)",
+                    base: "repeat(1,auto)",
                     md: "repeat(2,auto)",
                     lg: "repeat(4,auto)",
                 }}
             >
-                <Box h="100%" p="15px 20px">
+                <Box h="100%" p={{base:"8px 12px",md:"15px 20px",lg:"15px 20px"}}>
                     <Text fontSize={"14px"} fontWeight={"bold"} textAlign={"left"}>
                         Total Assessment
                     </Text>
@@ -43,7 +43,7 @@ const AssesmentOverview = () => {
                                 borderRadius: "6px",
                             }}
                         />
-                        <Text fontSize={"20px"} fontWeight={"bold"}>
+                        <Text fontSize={{base:"16px",md:"20px",lg:"20px"}} fontWeight={"bold"}>
                             34
                         </Text>
                     </Flex>
@@ -51,8 +51,9 @@ const AssesmentOverview = () => {
 
                 <Box
                     borderRight={{ base: "none", md: "none", lg: "1px solid #E3E5E8" }}
-                    borderLeft={"1px solid #E3E5E8"}
-                    p="15px 20px"
+                    borderLeft={{ base: "none", md: "1px solid #E3E5E8", lg: "1px solid #E3E5E8" }}
+          borderTop={{ base: "1px solid #E3E5E8", md: "none", lg: "none" }}
+          p={{base:"8px 12px",md:"15px 20px",lg:"15px 20px"}}
                 >
                     <Text fontSize={"14px"} fontWeight={"bold"} textAlign={"left"}>
                         Candidates
@@ -71,12 +72,12 @@ const AssesmentOverview = () => {
                         <Flex>
                             <Box
                                 alignItems={"center"}
-                                p="0px 10px"
+                                p={{base:"0px 5px ",md:"0px 10px",lg:"0px 10px"}}
                                 borderRight={"1px solid #E3E5E8"}
                             >
                                 <Text
                                     alignItems={"center"}
-                                    fontSize={"20px"}
+                                    fontSize={{base:"16px",md:"20px",lg:"20px"}}
                                     fontWeight={"bold"}
                                 >
                                     11,145{" "}
@@ -86,10 +87,10 @@ const AssesmentOverview = () => {
                                 </Text>
                                 <Text fontSize={"12px"}>Total Candidate</Text>
                             </Box>
-                            <Box alignItems={"center"} p="0px 10px">
+                            <Box alignItems={"center"} p={{base:"0px 5px ",md:"0px 10px",lg:"0px 10px"}}>
                                 <Text
                                     alignItems={"center"}
-                                    fontSize={"20px"}
+                                    fontSize={{base:"16px",md:"20px",lg:"20px"}}
                                     fontWeight={"bold"}
                                 >
                                     114{" "}
@@ -103,14 +104,14 @@ const AssesmentOverview = () => {
                     </Flex>
                 </Box>
                 <Box
-                    borderRight={"1px solid #E3E5E8"}
+                    borderRight={{ base: "none", md: "1px solid #E3E5E8", lg: "1px solid #E3E5E8" }}
                     borderTop={{
                         base: "1px solid #E3E5E8",
                         md: "1px solid #E3E5E8",
                         lg: "none",
                     }}
-                    p="15px 20px"
-                    gridColumnStart={{ base: "3", md: "1", lg: "3" }}
+                    p={{base:"8px 12px",md:"15px 20px",lg:"15px 20px"}}
+                    gridColumnStart={{ base: "1", md: "1", lg: "3" }}
                 >
                     <Text fontSize={"14px"} fontWeight={"bold"} textAlign={"left"}>
                         Candidates Source
@@ -129,12 +130,12 @@ const AssesmentOverview = () => {
                         <Flex>
                             <Box
                                 alignItems={"center"}
-                                p="0px 10px"
+                                p={{base:"0px 5px ",md:"0px 10px",lg:"0px 10px"}}
                                 borderRight={"1px solid #E3E5E8"}
                             >
                                 <Text
                                     alignItems={"center"}
-                                    fontSize={"20px"}
+                                    fontSize={{base:"16px",md:"20px",lg:"20px"}}
                                     fontWeight={"bold"}
                                 >
                                     11,000{" "}
@@ -148,12 +149,12 @@ const AssesmentOverview = () => {
                             </Box>
                             <Box
                                 alignItems={"center"}
-                                p="0px 10px"
+                                p={{base:"0px 5px ",md:"0px 10px",lg:"0px 10px"}}
                                 borderRight={"1px solid #E3E5E8"}
                             >
                                 <Text
                                     alignItems={"center"}
-                                    fontSize={"20px"}
+                                    fontSize={{base:"16px",md:"20px",lg:"20px"}}
                                     fontWeight={"bold"}
                                 >
                                     145{" "}
@@ -163,10 +164,10 @@ const AssesmentOverview = () => {
                                 </Text>
                                 <Text fontSize={"12px"}>Social Share</Text>
                             </Box>
-                            <Box alignItems={"center"} p="0px 10px">
+                            <Box alignItems={"center"} p={{base:"0px 5px ",md:"0px 10px",lg:"0px 10px"}}>
                                 <Text
                                     alignItems={"center"}
-                                    fontSize={"20px"}
+                                    fontSize={{base:"16px",md:"20px",lg:"20px"}}
                                     fontWeight={"bold"}
                                 >
                                     145{" "}
@@ -181,7 +182,7 @@ const AssesmentOverview = () => {
                 </Box>
                 <Box
                     h="100%"
-                    p="15px 20px"
+                    p={{base:"8px 12px",md:"15px 20px",lg:"15px 20px"}}
                     borderTop={{
                         base: "1px solid #E3E5E8",
                         md: "1px solid #E3E5E8",
@@ -202,7 +203,7 @@ const AssesmentOverview = () => {
                                 borderRadius: "6px",
                             }}
                         />
-                        <Text fontSize={"20px"} fontWeight={"bold"}>
+                        <Text fontSize={{base:"16px",md:"20px",lg:"20px"}} fontWeight={"bold"}>
                             11
                         </Text>
                     </Flex>
